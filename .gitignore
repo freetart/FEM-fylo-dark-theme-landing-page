@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+.cache
+
+# page content
+src/assets/content.txt
+
+# design files
+src/assets/design

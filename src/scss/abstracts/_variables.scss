@@ -1,0 +1,38 @@
+// colors
+$colors: (
+  // shades
+  black: hsl(0, 0%, 0%),
+  white: hsl(0, 0%, 100%),
+  // testimonials background
+  primary-100: hsl(219, 30%, 18%),
+  // intro and email sign up background
+  primary-200: hsl(217, 28%, 15%),
+  // main background
+  primary-300: hsl(218, 28%, 13%),
+  // footer background
+  primary-400: hsl(216, 53%, 9%),
+  // inside call-to-action gradient
+  cyan: hsl(176, 68%, 64%),
+  blue: hsl(198, 60%, 50%),
+  // error
+  lightRed: hsl(0, 100%, 63%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+// font sizes
+$font-sizes: (
+  xxl: 3.5rem,
+  xl: 3rem,
+  lg: 2.5rem,
+  md: 2rem,
+  sm: 1.8rem,
+  xs: 1.6rem,
+  xxs: 1.3rem,
+);
+
+@function size($size) {
+  @return map-get($font-sizes, $size);
+}

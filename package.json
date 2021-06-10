@@ -1,0 +1,17 @@
+{
+  "name": "fylo-dark-theme-landing",
+  "version": "1.0.0",
+  "description": "fylo dark theme landing page challenge for frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Chris M. (habibdev)",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.34.1"
+  }
+}
