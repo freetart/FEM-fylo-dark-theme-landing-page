@@ -176,6 +176,15 @@ input {
   border-radius: 1rem;
   transform: translateY(14rem);
 }
+.cta.error .cta__input {
+  border: 0.1rem solid;
+}
+.cta.error .cta__input-icon {
+  display: block;
+}
+.cta.error .cta__message {
+  display: block;
+}
 @media (max-width: 500px) {
   .cta {
     transform: translateY(0);
@@ -235,6 +244,7 @@ input {
   align-items: center;
   width: 80%;
   gap: 2rem;
+  position: relative;
 }
 @media (max-width: 900px) {
   .cta__form {
@@ -249,9 +259,41 @@ input {
   border: 0;
   outline: 0;
 }
+.cta__input-icon {
+  position: absolute;
+  width: 2.5rem;
+  top: 40%;
+  right: 35%;
+  display: none;
+  color: #ff4242;
+  font-size: 1.3rem;
+}
+@media (max-width: 900px) {
+  .cta__input-icon {
+    right: 5%;
+    top: 15%;
+  }
+}
 @media (max-width: 900px) {
   .cta__input {
     width: 100%;
+  }
+}
+.cta__message {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #ff4242;
+  display: none;
+}
+@media (max-width: 900px) {
+  .cta__message {
+    top: -20%;
   }
 }
 

@@ -134,19 +134,66 @@ var preloader = function preloader() {
 
 var _default = preloader;
 exports.default = _default;
+},{}],"js/validateEmail.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var validateEmail = function validateEmail() {
+  var form = document.querySelector(".cta__form");
+  var emailInput = document.querySelector(".cta__input"); // check input
+
+  var checkInput = function checkInput() {
+    var emailValue = emailInput.value.trim();
+
+    if (emailValue === "") {
+      setErrorMsg(emailInput, "Email cannot be blank");
+    } else if (!isEmail(emailValue)) {
+      setErrorMsg(emailInput, "Email is not valid");
+    }
+  }; // error message
+
+
+  var setErrorMsg = function setErrorMsg(input, message) {
+    var inputGroup = input.parentElement.parentElement.parentElement;
+    var errorMessage = inputGroup.querySelector(".cta__message");
+    errorMessage.innerText = message;
+    inputGroup.className = "cta error";
+  }; // check if valid email
+
+
+  var isEmail = function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+  }; // submit form
+
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    checkInput();
+  });
+};
+
+var _default = validateEmail;
+exports.default = _default;
 },{}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
 var _preloader = _interopRequireDefault(require("./preloader.js"));
 
+var _validateEmail = _interopRequireDefault(require("./validateEmail.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var init = function init() {
   (0, _preloader.default)();
+  (0, _validateEmail.default)();
 };
 
 window.addEventListener("DOMContentLoaded", init);
-},{"./preloader.js":"js/preloader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./preloader.js":"js/preloader.js","./validateEmail.js":"js/validateEmail.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

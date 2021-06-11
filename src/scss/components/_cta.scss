@@ -8,6 +8,20 @@
   border-radius: $cardRadius;
   transform: translateY(14rem);
 
+  &.error {
+    .cta__input {
+      border: 0.1rem solid color(softRed);
+    }
+
+    .cta__input-icon {
+      display: block;
+    }
+
+    .cta__message {
+      display: block;
+    }
+  }
+
   @include responsive(sm) {
     transform: translateY(0);
     margin-bottom: 2rem;
@@ -56,6 +70,7 @@
     @include flexCenter;
     width: 80%;
     gap: 2rem;
+    position: relative;
 
     @include responsive(lg) {
       flex-direction: column;
@@ -70,8 +85,38 @@
     border: 0;
     outline: 0;
 
+    &-icon {
+      position: absolute;
+      width: 2.5rem;
+      top: 40%;
+      right: 35%;
+      display: none;
+      color: color(lightRed);
+      font-size: size(xxs);
+
+      @include responsive(lg) {
+        right: 5%;
+        top: 15%;
+      }
+    }
+
     @include responsive(lg) {
       width: 100%;
+    }
+  }
+
+  &__message {
+    @include textStyles;
+    position: absolute;
+    top: -35%;
+    left: 5%;
+    font-size: size(xxs);
+    font-style: italic;
+    color: color(lightRed);
+    display: none;
+
+    @include responsive(lg) {
+      top: -20%;
     }
   }
 }
