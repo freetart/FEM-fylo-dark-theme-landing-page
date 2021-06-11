@@ -5,6 +5,10 @@
   background-color: color(primary-400);
   padding-top: 20rem;
 
+  @include responsive(sm) {
+    padding-top: 5rem;
+  }
+
   &__logo-container {
     @include maxWidthLg;
     padding: 0 2rem;

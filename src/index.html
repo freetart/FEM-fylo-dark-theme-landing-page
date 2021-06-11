@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="shortcut icon" href="./assets/images/favicon/koala.ico" />
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Frontend Mentor Fylo Dark Theme Landing Page</title>
   </head>
   <body>
-    <!-- TODO: import bootstrap navbar | create clientside email validation -->
     <!-- preloader -->
     <div class="preloader">
       <div class="preloader__content">
@@ -22,26 +26,40 @@
     </div>
 
     <!-- nav -->
-    <nav class="nav">
-      <div class="nav__content">
-        <a href="#!">
+    <nav class="navbar navbar-expand-sm navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#!" class="navbar-brand">
           <img
             src="./assets/images/logo.svg"
             alt="fylo logo"
-            class="nav__logo"
+            class="nav-logo"
           />
         </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#!" class="nav__link">Features</a>
-          </li>
-          <li class="nav__item">
-            <a href="#!" class="nav__link">Team</a>
-          </li>
-          <li class="nav__item">
-            <a href="#!" class="nav__link">Sign In</a>
-          </li>
-        </ul>
+
+        <!-- nav toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- nav links -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Sign In</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -373,6 +391,8 @@
       />
     </article>
 
+    <!-- bootstrap js -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- font awesome -->
     <script src="../node_modules/@fortawesome/fontawesome-free/js/brands.min.js"></script>
     <script src="../node_modules/@fortawesome/fontawesome-free/js/solid.min.js"></script>
