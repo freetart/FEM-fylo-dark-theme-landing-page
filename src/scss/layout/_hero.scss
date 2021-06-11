@@ -1,0 +1,28 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.hero {
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthSm;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(xxl) + 1rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(sm);
+    width: 75%;
+  }
+}
