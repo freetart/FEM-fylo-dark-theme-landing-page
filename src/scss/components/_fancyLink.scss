@@ -1,0 +1,43 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.fancy-link {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 0.1rem solid color(cyan);
+  position: relative;
+
+  &__text {
+    @include textStyles;
+    color: color(cyan);
+    font-size: size(xs);
+    padding: 0 0.5rem 0 0.5rem;
+    z-index: 1;
+    transition: $mainTransition;
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      color: color(white);
+    }
+
+    &:hover::before,
+    &:focus::before {
+      transform: translateX(0);
+    }
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: color(cyan);
+    transform: translateX(-100%);
+    transition: $mainTransition;
+    z-index: -1;
+  }
+}

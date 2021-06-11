@@ -2,6 +2,11 @@
 @use "../abstracts/abstracts" as *;
 
 .hero {
+  background-color: color(primary-200);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
   &__content {
     @include sectionSpacing;
     @include maxWidthSm;
@@ -24,5 +29,14 @@
     @include textStyles;
     font-size: size(sm);
     width: 75%;
+  }
+
+  .bg-pattern {
+    pointer-events: none;
+    margin: -0.7rem;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(1.1);
   }
 }

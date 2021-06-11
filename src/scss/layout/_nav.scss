@@ -2,6 +2,8 @@
 @use "../abstracts/abstracts" as *;
 
 .nav {
+  background-color: color(primary-200);
+
   &__content {
     @include maxWidthLg;
     @include sectionSpacing;

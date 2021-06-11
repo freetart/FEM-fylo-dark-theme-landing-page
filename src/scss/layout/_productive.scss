@@ -1,0 +1,25 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.productive {
+  &__content {
+    @include maxWidthLg;
+    @include sectionSpacingLg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__heading {
+    @include headingStyles;
+    font-size: size(xxl);
+    padding-bottom: 2rem;
+  }
+
+  &__desc {
+    @include textStyles;
+    font-size: size(sm);
+    padding-bottom: 2rem;
+  }
+}
