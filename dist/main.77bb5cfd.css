@@ -128,4 +128,39 @@ input {
   width: 75%;
 }
 
+.features__content {
+  padding: 10rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+.features__feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.features__icon {
+  width: 8rem;
+}
+.features__icon--resize {
+  width: 6rem;
+}
+.features__heading {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  font-size: 2rem;
+}
+.features__desc {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
