@@ -417,4 +417,34 @@ input {
   border: 0.2rem solid #65e2d9;
 }
 
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: black;
+}
+.tag__heading {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: white;
+}
+.tag__link {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  color: #65e2d9;
+  outline: 0;
+}
+.tag__link:hover, .tag__link:focus {
+  text-decoration: underline;
+}
+.tag__logo {
+  width: 5rem;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
