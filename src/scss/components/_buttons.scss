@@ -15,10 +15,16 @@
     border-radius: $radius;
     transition: $mainTransition;
     text-shadow: $textShadow;
+    border: 0;
 
     &:hover,
     &:focus {
       transform: translateY(-0.5rem);
+    }
+
+    &--cta {
+      width: 30%;
+      font-size: size(xxs);
     }
   }
 }
