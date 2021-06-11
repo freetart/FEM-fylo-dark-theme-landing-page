@@ -11,6 +11,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 350px) {
+  html {
+    font-size: 55.5%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -75,9 +80,19 @@ input {
 .btn--primary:hover, .btn--primary:focus {
   transform: translateY(-0.5rem);
 }
+@media (max-width: 700px) {
+  .btn--primary--hero {
+    width: 100%;
+  }
+}
 .btn--primary--cta {
   width: 30%;
   font-size: 1.3rem;
+}
+@media (max-width: 900px) {
+  .btn--primary--cta {
+    width: 100%;
+  }
 }
 
 .fancy-link {
@@ -161,6 +176,22 @@ input {
   border-radius: 1rem;
   transform: translateY(14rem);
 }
+@media (max-width: 500px) {
+  .cta {
+    transform: translateY(0);
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1250px) {
+  .cta {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 700px) {
+  .cta {
+    max-width: 90vw;
+  }
+}
 .cta__content {
   display: flex;
   justify-content: center;
@@ -169,6 +200,16 @@ input {
   gap: 3rem;
   padding: 5rem;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .cta__content {
+    padding: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .cta__content {
+    padding: 2rem 1rem;
+  }
 }
 .cta__heading {
   font-weight: 700;
@@ -183,12 +224,22 @@ input {
   font-size: 1.6rem;
   width: 75%;
 }
+@media (max-width: 700px) {
+  .cta__desc {
+    width: 100%;
+  }
+}
 .cta__form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   gap: 2rem;
+}
+@media (max-width: 900px) {
+  .cta__form {
+    flex-direction: column;
+  }
 }
 .cta__input {
   padding: 1.5rem 2rem;
@@ -197,6 +248,11 @@ input {
   width: 70%;
   border: 0;
   outline: 0;
+}
+@media (max-width: 900px) {
+  .cta__input {
+    width: 100%;
+  }
 }
 
 .nav {
@@ -214,6 +270,11 @@ input {
   display: flex;
   align-items: center;
   gap: 4rem;
+}
+@media (max-width: 700px) {
+  .nav__list {
+    display: none;
+  }
 }
 .nav__link {
   font-weight: 400;
@@ -248,11 +309,26 @@ input {
 .hero__img {
   width: 50%;
 }
+@media (max-width: 700px) {
+  .hero__img {
+    width: 80%;
+  }
+}
 .hero__heading {
   font-weight: 700;
   letter-spacing: 0.1rem;
   line-height: 1.3;
   font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .hero__heading {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .hero__heading {
+    font-size: 3rem;
+  }
 }
 .hero__desc {
   font-weight: 400;
@@ -260,6 +336,21 @@ input {
   line-height: 1.6;
   font-size: 1.8rem;
   width: 75%;
+}
+@media (max-width: 700px) {
+  .hero__desc {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .hero__desc {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 350px) {
+  .hero__desc {
+    display: none;
+  }
 }
 .hero .bg-pattern {
   pointer-events: none;
@@ -277,6 +368,11 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
+}
+@media (max-width: 700px) {
+  .features__content {
+    grid-template-columns: 1fr;
+  }
 }
 .features__feature {
   display: flex;
@@ -314,6 +410,11 @@ input {
   align-items: center;
   gap: 5rem;
 }
+@media (max-width: 700px) {
+  .productive__content {
+    grid-template-columns: 1fr;
+  }
+}
 .productive__heading {
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -338,12 +439,32 @@ input {
   gap: 5rem;
   position: relative;
 }
+@media (max-width: 900px) {
+  .quotes__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .quotes__content {
+    grid-template-columns: 1fr;
+  }
+}
 .quotes__bg-quote {
   position: absolute;
   width: 5rem;
   top: 16%;
   left: 1%;
   z-index: -1;
+}
+@media (max-width: 900px) {
+  .quotes__bg-quote {
+    top: 9%;
+  }
+}
+@media (max-width: 700px) {
+  .quotes__bg-quote {
+    top: 7%;
+  }
 }
 
 .footer {
@@ -353,6 +474,7 @@ input {
 .footer__logo-container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .footer__logo {
   width: 20rem;
@@ -364,6 +486,16 @@ input {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   gap: 5rem;
+}
+@media (max-width: 900px) {
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
 }
 .footer__row {
   display: flex;

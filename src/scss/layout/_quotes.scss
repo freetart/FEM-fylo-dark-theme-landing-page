@@ -9,6 +9,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     position: relative;
+
+    @include responsive(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__bg-quote {
@@ -17,5 +25,13 @@
     top: 16%;
     left: 1%;
     z-index: -1;
+
+    @include responsive(lg) {
+      top: 9%;
+    }
+
+    @include responsive(md) {
+      top: 7%;
+    }
   }
 }

@@ -16,6 +16,10 @@
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    @include responsive(md) {
+      display: none;
+    }
   }
 
   &__link {

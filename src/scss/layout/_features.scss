@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__feature {

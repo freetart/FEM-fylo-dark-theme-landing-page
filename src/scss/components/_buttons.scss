@@ -22,9 +22,19 @@
       transform: translateY(-0.5rem);
     }
 
+    &--hero {
+      @include responsive(md) {
+        width: 100%;
+      }
+    }
+
     &--cta {
       width: 30%;
       font-size: size(xxs);
+
+      @include responsive(lg) {
+        width: 100%;
+      }
     }
   }
 }

@@ -18,17 +18,41 @@
 
   &__img {
     width: 50%;
+
+    @include responsive(md) {
+      width: 80%;
+    }
   }
 
   &__heading {
     @include headingStyles;
     font-size: size(xxl) + 1rem;
+
+    @include responsive(sm) {
+      font-size: size(xxl);
+    }
+
+    @include responsive(xs) {
+      font-size: size(xl);
+    }
   }
 
   &__desc {
     @include textStyles;
     font-size: size(sm);
     width: 75%;
+
+    @include responsive(md) {
+      width: 100%;
+    }
+
+    @include responsive(xs) {
+      font-size: size(xs);
+    }
+
+    @include responsive(xxs) {
+      display: none;
+    }
   }
 
   .bg-pattern {
