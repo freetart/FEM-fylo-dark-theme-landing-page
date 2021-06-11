@@ -2,6 +2,8 @@
 @use "../abstracts/abstracts" as *;
 
 .productive {
+  overflow-x: hidden;
+
   &__content {
     @include maxWidthLg;
     @include sectionSpacingLg;

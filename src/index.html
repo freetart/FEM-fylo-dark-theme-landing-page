@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./assets/images/favicon/koala.ico" />
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Frontend Mentor Fylo Dark Theme Landing Page</title>
@@ -70,16 +72,23 @@
           src="./assets/images/illustration-intro.png"
           alt="hero image"
           class="hero__img"
+          data-aos="fade-up"
         />
-        <h1 class="hero__heading">
+        <h1 class="hero__heading" data-aos="fade-up" data-aos-delay="100">
           All your files in one secure location, accessible anywhere.
         </h1>
-        <p class="hero__desc">
+        <p class="hero__desc" data-aos="fade-up" data-aos-delay="200">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <a href="#!" class="btn btn--primary btn--primary--hero">Get Started</a>
+        <a
+          href="#!"
+          class="btn btn--primary btn--primary--hero"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          >Get Started</a
+        >
       </div>
       <img
         src="./assets/images/bg-curvy-desktop.svg"
@@ -93,7 +102,7 @@
       <section class="features">
         <div class="features__content">
           <!-- single feature -->
-          <article class="features__feature">
+          <article class="features__feature" data-aos="fade-up">
             <img
               src="./assets/images/icon-access-anywhere.svg"
               alt="feature icon"
@@ -106,7 +115,11 @@
             </p>
           </article>
           <!-- single feature -->
-          <article class="features__feature">
+          <article
+            class="features__feature"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="./assets/images/icon-security.svg"
               alt="feature icon"
@@ -120,7 +133,11 @@
             </p>
           </article>
           <!-- single feature -->
-          <article class="features__feature">
+          <article
+            class="features__feature"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="./assets/images/icon-collaboration.svg"
               alt="feature icon"
@@ -133,7 +150,11 @@
             </p>
           </article>
           <!-- single feature -->
-          <article class="features__feature">
+          <article
+            class="features__feature"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="./assets/images/icon-any-file.svg"
               alt="feature icon"
@@ -156,8 +177,9 @@
             src="./assets/images/illustration-stay-productive.png"
             alt="productive image"
             class="productive__img"
+            data-aos="fade-right"
           />
-          <div class="productive__info">
+          <div class="productive__info" data-aos="fade-left">
             <h2 class="productive__heading">
               Stay productive, wherever you are
             </h2>
@@ -186,7 +208,7 @@
             class="quotes__bg-quote"
           />
           <!-- single quote -->
-          <article class="card">
+          <article class="card" data-aos="fade-up">
             <div class="card__content">
               <blockquote>
                 <p class="card__quote">
@@ -209,7 +231,7 @@
             </div>
           </article>
           <!-- single quote -->
-          <article class="card">
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
             <div class="card__content">
               <blockquote>
                 <p class="card__quote">
@@ -232,7 +254,7 @@
             </div>
           </article>
           <!-- single quote -->
-          <article class="card">
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
             <div class="card__content">
               <blockquote>
                 <p class="card__quote">
@@ -259,7 +281,7 @@
 
       <!-- cta -->
       <article class="cta">
-        <div class="cta__content">
+        <div class="cta__content" data-aos="fade-down">
           <h2 class="cta__heading">Get early access today</h2>
           <p class="cta__desc">
             It only takes a minute to sign up and our free starter tier is
