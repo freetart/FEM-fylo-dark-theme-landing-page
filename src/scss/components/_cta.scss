@@ -29,7 +29,7 @@
 
   &__form {
     @include flexCenter;
-    width: 100%;
+    width: 80%;
     gap: 2rem;
   }
 
@@ -41,8 +41,4 @@
     border: 0;
     outline: 0;
   }
-}
-
-.footer {
-  background-color: color(primary-400);
 }

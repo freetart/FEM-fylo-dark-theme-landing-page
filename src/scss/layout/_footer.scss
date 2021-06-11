@@ -1,0 +1,79 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.footer {
+  background-color: color(primary-400);
+  padding-top: 20rem;
+
+  &__logo-container {
+    @include maxWidthLg;
+  }
+
+  &__logo {
+    width: 20rem;
+  }
+
+  &__content {
+    @include sectionSpacing;
+    @include maxWidthLg;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    width: 2rem;
+  }
+
+  &__text {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__link {
+    @include textStyles;
+    font-size: size(xxs);
+    color: color(white);
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+      color: color(cyan);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__social {
+    @include flexCenter;
+    font-size: size(sm);
+    color: color(white);
+    border: 0.2rem solid color(white);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    transition: $mainTransition;
+
+    &:hover,
+    &:focus {
+      color: color(cyan);
+      border: 0.2rem solid color(cyan);
+    }
+  }
+}
