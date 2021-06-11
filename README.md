@@ -6,7 +6,7 @@ fylo dark theme landing page challenge for frontend mentor
 
 - responsive design
 - scroll animations
-- clientside javascript validation
+- clientside javascript email validation
 
 #### Technologies used
 
