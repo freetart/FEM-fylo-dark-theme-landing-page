@@ -14,6 +14,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #181f2a;
+  color: white;
 }
 
 a {
@@ -50,6 +52,31 @@ input {
     transition-duration: 0s !important;
     transition-delay: 0s !important;
   }
+}
+.nav__content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.nav__link {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  color: white;
+  font-size: 1.6rem;
+  opacity: 0.7;
+}
+.nav__link:hover, .nav__link:focus {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
