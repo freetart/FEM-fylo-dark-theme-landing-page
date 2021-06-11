@@ -1,0 +1,39 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.card {
+  background-color: color(primary-100);
+  border-radius: $cardRadius;
+
+  &__content {
+    padding: 3rem;
+  }
+
+  &__quote {
+    @include textStyles;
+    font-size: size(xs);
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+
+  &__img {
+    width: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid color(cyan);
+  }
+
+  &__name {
+    @include headingStyles;
+    font-size: size(xxs) + 0.1rem;
+  }
+
+  &__pos {
+    @include textStyles;
+    font-size: size(xxs) - 0.1rem;
+  }
+}

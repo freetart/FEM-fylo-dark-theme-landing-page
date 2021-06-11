@@ -1,0 +1,21 @@
+// imports
+@use "../abstracts/abstracts" as *;
+
+.quotes {
+  &__content {
+    @include maxWidthLg;
+    @include sectionSpacingLg;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    position: relative;
+  }
+
+  &__bg-quote {
+    position: absolute;
+    width: 5rem;
+    top: 16%;
+    left: 1%;
+    z-index: -1;
+  }
+}
